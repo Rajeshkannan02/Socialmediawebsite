@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapperment</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-section"></div>
+
+      <div class="detail">
+        <div class="top">
+          <button class="login">Login</button>
+          <button class="signup ac">Sign Up</button>
+        </div>
+
+        <div class="info">
+          <div>
+            <form id="logform" class="log">
+              <div class="input-sec email">
+                <img src="./images/mail.png" alt="" />
+                <input
+                  id="curremail"
+                  class="email"
+                  name="curremail"
+                  placeholder="Email"
+                  type="text"
+                />
+              </div>
+
+              <div class="input-sec">
+                <img src="./images/key.png" alt="" />
+                <input
+                  id="pass"
+                  name="password"
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+
+              <button class="submit loginbtn" type="submit">Login</button>
+            </form>
+
+            <form class="sign disable">
+              <div class="input-sec">
+                <img src="./images/user.png" alt="" />
+                <input
+                  id="newuser"
+                  class="username"
+                  name="newusername"
+                  placeholder="User Name"
+                  type="text"
+                />
+              </div>
+
+              <div class="input-sec email">
+                <img src="./images/mail.png" alt="" />
+                <input
+                  id="email"
+                  class="email"
+                  name="email"
+                  placeholder="Email"
+                  type="text"
+                />
+              </div>
+
+              <div class="input-sec">
+                <img src="./images/key.png" alt="" />
+                <input
+                  id="newpass"
+                  name="newpassword"
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+
+              <div class="input-sec confirmpass">
+                <img src="./images/lock.png" alt="" />
+                <input
+                  id="confirmpass"
+                  name="confirmpassword"
+                  placeholder="Confirm Password"
+                  type="password"
+                />
+              </div>
+
+              <button class="submit signupbtn" type="submit">Signup</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

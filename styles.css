@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --background: #b1dee9;
+  --line: #000000;
+}
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("./images/bg1alter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  z-index: 100;
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 1px 0.4px 50px 0.9px grey;
+  display: flex;
+  flex-direction: row;
+}
+
+.img-section {
+  width: 50%;
+  background: url("./images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.detail {
+  width: 50%;
+  background-image: linear-gradient(to right, white, #b1dee9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.detail .top {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.input-sec {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.input-sec img {
+  height: 25px;
+  position: absolute;
+  left: 5px;
+}
+input:focus {
+  outline: none;
+}
+
+input {
+  /*border-bottom: 5px solid var(--line);*/
+  box-shadow: 1px 1px 10px grey;
+  font-size: 15px;
+  width: 100%;
+  outline: 0;
+  padding: 10px 40px;
+  background: transparent;
+}
+.info {
+  width: 70%;
+}
+.login {
+  width: 30%;
+  border-radius: 20px;
+  border-bottom: 5px solid var(--background);
+  padding: 5px 10px;
+  color: black;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 1s;
+}
+.login:hover,
+.signup:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+.signup {
+  width: 30%;
+  border-radius: 20px;
+  border-bottom: 5px solid var(--background);
+  padding: 5px 10px;
+  color: black;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 1s;
+}
+.ac {
+  background: white;
+}
+
+.submit {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+  border-radius: 20px;
+  background-color: var(--background);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  padding: 10px;
+  color: grey;
+  font-weight: bolder;
+  font-size: 15px;
+  cursor: pointer;
+}
+.submit:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+.disable {
+  display: none;
+}

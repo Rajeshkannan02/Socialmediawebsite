@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="profile.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <nav>
+          <div class="logo">Tapperment</div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="items">
+            <ul>
+              <li>
+                <a href="">
+                  <i class="icon fa-solid fa-house"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="icon fa-solid fa-bell"></i>
+                  <p>Notification</p>
+                </a>
+              </li>
+  
+              <li>
+                <a href="">
+                  <i class="icon fa-solid fa-user"></i>
+  
+                  <p>Profile</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  
+    <div class="profile">
+
+    
+    <div class="cards">
+       
+        <div class="circle">
+        </div>
+        <form id=" form" action="" autocomplete="off">
+            <div class="form-group">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" id="Name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+           <div class="form-group">
+            <i class="fa-sharp fa-solid fa-envelope"></i>
+            <input type="text" id="email" placeholder="Email">
+           </div>
+           <div class="form-group">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <input type="text" id="number"  placeholder="Mobile Number">
+         </div>
+       <!--<input type="submit" value="register">-->  
+         <button type="submit">Edit Profile</button>
+        </form>  
+    </div>
+    <div class="leftpane">
+          <!--posts-->
+  
+          <div class="posts">
+            <div class="card">
+              <div class="user">
+                <div class="left">
+                  <i class="icon fa-regular fa-user"></i>
+                  <p>hyyy</p>
+                </div>
+                <i class="icon trash fa-solid fa-trash"></i>
+              </div>
+  
+              <img src="images/profilepic.jpg" />
+  
+              <div class="post-like">
+                <i class="fa-solid icon fa-heart like"></i>
+                <i class="fa-regular icon fa-comment comment"></i>
+              </div>
+              <div class="desc">
+                <p>Description:</p>
+              </div>
+              <div class="comments">
+                <div id="com_desc">
+                  <div class="individual_comment">
+                    <!--individual comment-->
+                    <label id="username_" for="username">username</label>
+                    <p class="usercomment">commentadded</p>
+                    <i class="icon trash fa-solid fa-trash"></i>
+                  </div>
+                </div>
+  
+                <form id="postcomment" action="">
+                  <inpu id="inputcomment" type="text" placeholder="Add comment" />
+                  <input type="submit" value="" />
+                </form>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
